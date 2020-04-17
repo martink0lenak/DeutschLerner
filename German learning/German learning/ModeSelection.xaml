@@ -1,0 +1,33 @@
+﻿<Window x:Class="German_learning.ModeSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:German_learning"
+        mc:Ignorable="d"
+        Title="DeutschLerner | Mód" Height="250" Width="225"
+        Background="NavajoWhite"
+        Closing="ModeSelectionWindow_Closing"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="5" Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+            <RadioButton x:Name="geSkRadioButton" GroupName="ModeSelection" Margin="5" Content="Preklad GE do SK" FontSize="13"/>
+            <RadioButton x:Name="skGeRadioButton" GroupName="ModeSelection" Margin="5" Content="Preklad SK do GE" FontSize="13"/>
+            <RadioButton x:Name="perfetkumRadioButton" GroupName="ModeSelection" Margin="5" Content="Perfektum slovies" FontSize="13"/>
+            <RadioButton x:Name="pluralRadioButton" GroupName="ModeSelection" Margin="5" Content="Plurál pods. mien" FontSize="13"/>
+            <RadioButton x:Name="genderRadioButton" GroupName="ModeSelection" Margin="5" Content="Rod pods. mien" FontSize="13"/>
+        </StackPanel>
+        
+        <TextBlock Grid.Row="0" Text="Mód" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+        <Button x:Name="modeSelectionOKButton" Click="ModeSelectionOKButton_Click" Grid.Row="2" Margin="5" Content="OK"/>
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+﻿<Window x:Name="MenuWindow" x:Class="German_learning.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:German_learning"
+        mc:Ignorable="d"
+        Title="DeutschLerner | Menu" Height="337" Width="400"
+        Background="NavajoWhite"
+        WindowStartupLocation="CenterScreen">
+
+<!-- main grid -->
+    <Grid Background="NavajoWhite" Margin="5 5 5 5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="101"/>
+            <ColumnDefinition Width="151"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="79*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="halloTextBlock" Grid.Column="1" Grid.Row="0" Text="Hallo!" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10"/>
+        
+        <!-- border surrounding the internal grid -->
+        <Border Grid.Row="1" Grid.Column="1"
+                Margin="10 10 10 10"
+                BorderBrush="Gray" BorderThickness="2"
+                Background="LightGray"
+                Grid.ColumnSpan="2">
+            <!-- grid with the controls -->
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="30"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition Width="65"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="17" Margin="9,8,9,8" Grid.Row="0" Grid.ColumnSpan="3" Width="185"/>
+                <TextBox x:Name="lectureNumTextBox" Grid.Row="2" Height="25" Width="65" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10" BorderBrush="Black" BorderThickness="1"/>
+                <ComboBox x:Name="subLectureComboBox" Grid.Column="1" Grid.Row="2" Margin="0 10 15 10" Height="25"  VerticalAlignment="Bottom">
+                    <ComboBoxItem Content="A"/>
+                    <ComboBoxItem Content="B"/>
+                    <ComboBoxItem Content="C"/>
+                    <ComboBoxItem Content="Celá lekcia"/>
+                </ComboBox>
+                <Button x:Name="modeSelectButton" Content="Výber módu" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="10 5 10 5" Width="115" HorizontalAlignment="Left" Click="modeSelectionBtnClick"/>
+                <Button x:Name="startButton" Grid.Column="2" Grid.Row="3" Margin="0 5 10 5" Content="Štart" Click="menuStartButton_Click"/>
+                <TextBlock Text="Číslo lekcie:" Grid.Column="0" Grid.Row="1" Margin="10 2 10 2"/>
+                <TextBlock Text="Podlekcia:" Grid.Column="1" Grid.Row="1" Margin="0 2 0 2"/>
+
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</Window>

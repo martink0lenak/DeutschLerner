@@ -1,0 +1,22 @@
+C:\Users\Martin\source\repos\German learning\German learning\bin\Debug\German learning.exe.config
+C:\Users\Martin\source\repos\German learning\German learning\bin\Debug\German learning.exe
+C:\Users\Martin\source\repos\German learning\German learning\bin\Debug\German learning.pdb
+C:\Users\Martin\source\repos\German learning\German learning\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Martin\source\repos\German learning\German learning\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.csprojAssemblyReference.cache
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\App.g.cs
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning_MarkupCompile.cache
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning_MarkupCompile.lref
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.g.resources
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German_learning.Properties.Resources.resources
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.csproj.GenerateResource.cache
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.csproj.CoreCompileInputs.cache
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.csproj.CopyComplete
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.exe
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\German learning.pdb
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\ModeSelection.g.cs
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\ModeSelection.baml
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\MainWindow.g.cs
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\MainWindow.baml
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\GeSkTranslate.g.cs
+C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\GeSkTranslate.baml
