@@ -17,12 +17,14 @@ namespace German_learning
     /// <summary>
     /// Interaction logic for GeSkTranslate.xaml
     /// </summary>
+
+
     public partial class GeSkTranslate : Window
     {
+        private GeSkMode geSkMode;
+
+
         public static string Answer { get; private set; }
-        
-
-
         public GeSkTranslate()
         {
             InitializeComponent();

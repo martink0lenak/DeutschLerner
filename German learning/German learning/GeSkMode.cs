@@ -8,6 +8,7 @@ namespace German_learning
 {
     class GeSkMode : Mode
     {
+        
         public override void Check(string answer)
         {
             

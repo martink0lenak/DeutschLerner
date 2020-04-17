@@ -31,11 +31,11 @@ namespace German_learning
             InitializeComponent();
         }
         #region string storing the lecture and sublecture selection in a format NumberLetter (eg. 11B)
-        static public string LectureSelectionFileName {get; private set; }
+        static public string LectureSelectionFileName { get; private set; }
         #endregion
 
         #region boolean which is true when the ModeSelection window is open, preventing multiple instances
-        static public bool IsModeSelectionOpen {private get; set; } = false;
+        static public bool IsModeSelectionOpen { private get; set; } = false;
         #endregion
 
         #region open mode selection window
@@ -79,13 +79,15 @@ namespace German_learning
                             break;
                         }
                         ////////
-                        LectureSelectionFileName = iStr + subLectureComboBox.Text +".json";
+                        LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
                         MessageBox.Show(LectureSelectionFileName);
-                        switch (ModeSelection.Mode
+                        switch (ModeSelection.SelectMode)
                         {
-                                
+                            case "gesk":
+
+                                break;
                         }
-                        break;
+
                         ////////
                     }
                 }
@@ -104,7 +106,7 @@ namespace German_learning
                 {
                     MessageBox.Show("Prosím, zvoľte podlekciu alebo celú lekciu");
                 }
-                
+
             }
         }
         #endregion

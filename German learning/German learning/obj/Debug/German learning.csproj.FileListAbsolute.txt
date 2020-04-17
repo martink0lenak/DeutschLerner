@@ -20,3 +20,12 @@ C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\MainWindo
 C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\MainWindow.baml
 C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\GeSkTranslate.g.cs
 C:\Users\Martin\source\repos\German learning\German learning\obj\Debug\GeSkTranslate.baml
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning.csprojAssemblyReference.cache
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\GeSkTranslate.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\MainWindow.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\ModeSelection.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\App.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning_MarkupCompile.cache
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning_MarkupCompile.lref
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning.exe
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning.pdb
