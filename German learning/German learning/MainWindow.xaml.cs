@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace German_learning
 {
@@ -78,14 +79,21 @@ namespace German_learning
                             MessageBox.Show("Lekcia 11A nemá žiadnu slovnú zásobu");
                             break;
                         }
-                        ////////
+                        
                         LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
-                        MessageBox.Show(LectureSelectionFileName);
+                        if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\DeutschLerner\" + LectureSelectionFileName))
+                        {
+                            MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke C:\Program Files (x86)\DeutschLerner\*.json");
+                            goto Ex;
+                        }
+                        ////////
                         switch (ModeSelection.SelectMode)
                         {
                             case "gesk":
-
-                                break;
+                                GeSkTranslate geSkTranslate = new GeSkTranslate();
+                                geSkTranslate.Show();
+                                goto Ex;
+                                
                         }
 
                         ////////
@@ -108,6 +116,7 @@ namespace German_learning
                 }
 
             }
+        Ex:;
         }
         #endregion
     }

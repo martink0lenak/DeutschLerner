@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Newtonsoft.Json;
+using static German_learning.RootWord;
 
 namespace German_learning
 {
@@ -21,13 +23,18 @@ namespace German_learning
 
     public partial class GeSkTranslate : Window
     {
-        private GeSkMode geSkMode;
+        private GeSkMode geSkMode { get; set; } = new GeSkMode();
+        
+        
+        public string Answer { get; private set; }
 
 
-        public static string Answer { get; private set; }
         public GeSkTranslate()
         {
             InitializeComponent();
+            
         }
+
+        
     }
 }

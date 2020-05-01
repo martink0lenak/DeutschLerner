@@ -7,18 +7,22 @@ using Newtonsoft.Json;
 
 namespace German_learning
 {
-    class RootWord
+    public class RootWord
     {
+
         public List<Word> words;
+
+
+        public class Word
+        {
+            public string ge;
+            public string sk;
+            public string type;
+            public string gender;
+            public string perfektum;
+            public string praeteritum;
+            public string plural;
+        }
     }
-    class Word
-    {
-        public string ge;
-        public string sk;
-        public string type;
-        public string gender;
-        public string perfektum;
-        public string praeteritum;
-        public string plural;
-    }
+    
 }
