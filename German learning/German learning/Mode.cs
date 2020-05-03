@@ -26,19 +26,23 @@ namespace German_learning
         #endregion
 
         #region string storing the asked word
-        protected string QuestionWord { get; set; }
+        public string GeneratedWord { get;protected set; }
         #endregion
         
         #region list of words from the files
         protected List<Word> listWords = new List<Word>();
         #endregion
 
+        #region stores a boolean value showing whether the game is over
+        public bool isOver { get; protected set; }
+        #endregion
+
         #region Random class
         protected Random rnd;
         #endregion
 
-        #region randomly generated indexes
-        protected int index { get; set; }
+        #region randomly generated index
+        public int index { get;protected set; }
         #endregion
 
         #region list of last used indexes
@@ -70,7 +74,7 @@ namespace German_learning
         #region checks whether the answer is correct and adds to right or wrong answer count
         public bool IsRight(string answer)
         {
-            if (answer == QuestionWord)
+            if (answer == GeneratedWord)
             {
                 RightAnswers++;
                 return true;

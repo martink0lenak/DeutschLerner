@@ -23,7 +23,7 @@ namespace German_learning
 
     public partial class GeSkTranslate : Window
     {
-        private GeSkMode geSkMode { get; set; } = new GeSkMode();
+        private GeSkMode geSkMode;
         
         
         public string Answer { get; private set; }
@@ -32,9 +32,14 @@ namespace German_learning
         public GeSkTranslate()
         {
             InitializeComponent();
-            
+           geSkMode = new GeSkMode();
         }
 
-        
+        private void generateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            geSkMode.GenerateWord();
+            generatedWordTxtBlck.Text = geSkMode.GeneratedWord;
+            generatedIndexTxtBlck.Text = geSkMode.index.ToString();
+        }
     }
 }

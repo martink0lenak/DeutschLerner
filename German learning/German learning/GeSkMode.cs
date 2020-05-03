@@ -15,6 +15,7 @@ namespace German_learning
         {
             usedIndex = new List<int>();
             ReadJson();
+            rnd = new Random();
             try
             {
                 RootWord word = JsonConvert.DeserializeObject<RootWord>(Json);
@@ -26,23 +27,33 @@ namespace German_learning
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
-                
             }
         }
         public override void GenerateWord()
         {
-            rnd = new Random();
-            //ensures that it wouldn't generate the same number twice
-            Back:
-            index = rnd.Next(0,listWords.Count);
-            foreach (int i in usedIndex)
+            if (usedIndex.Count == listWords.Count)
             {
-                if (index == i)
-                {
-                    goto Back;
-                }
+                isOver = true;
             }
-            usedIndex.Add(index);
+            else
+            {
+                
+                index = rnd.Next(0, listWords.Count);
+
+                //ensures that it wouldn't generate the same number twice
+
+               
+                foreach (int i in usedIndex)
+                {
+                    while (i == index)
+                    {
+                        index = rnd.Next(0, listWords.Count);
+                    }
+                }
+                usedIndex.Add(index);
+                GeneratedWord = listWords[index].ge;
+            }
+            
         }
 
 
