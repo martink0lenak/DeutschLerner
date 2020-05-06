@@ -69,7 +69,7 @@ namespace German_learning
                     string iStr = i.ToString();
                     if (i == 21)
                     {
-                        MessageBox.Show("Prosím, zadajte správne číslo (11-20) a uistite sa, že za ním nie sú medzery");
+                        MessageBox.Show("Prosím, zadajte správne číslo (11-20) a uistite sa, či za ním nie sú medzery.");
                         break;
                     }
                     else if (lectureNumTextBox.Text == iStr)
@@ -81,9 +81,9 @@ namespace German_learning
                         }
                         
                         LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
-                        if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\DeutschLerner\" + LectureSelectionFileName))
+                        if (!File.Exists(@"Lekcie\"+ MainWindow.LectureSelectionFileName))
                         {
-                            MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke C:\Program Files (x86)\DeutschLerner\*.json");
+                            MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke Lekcie");
                             goto Ex;
                         }
                         ////////

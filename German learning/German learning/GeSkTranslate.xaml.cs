@@ -24,22 +24,51 @@ namespace German_learning
     public partial class GeSkTranslate : Window
     {
         private GeSkMode geSkMode;
-        
-        
+
+
         public string Answer { get; private set; }
+        
 
 
         public GeSkTranslate()
         {
             InitializeComponent();
-           geSkMode = new GeSkMode();
+            geSkMode = new GeSkMode();
+            geSkMode.GenerateWord();
+            generatedWordTxtBlck.Text = geSkMode.GeneratedWord;
         }
 
         private void generateBtn_Click(object sender, RoutedEventArgs e)
         {
-            geSkMode.GenerateWord();
-            generatedWordTxtBlck.Text = geSkMode.GeneratedWord;
-            generatedIndexTxtBlck.Text = geSkMode.index.ToString();
+            if (geSkMode.usedIndex.Count < geSkMode.listWords.Count)
+            {
+                if (geSkMode.IsRight(answerTextBox.Text))
+                {
+                    correctAnswersTextBlock.Text = geSkMode.RightAnswers.ToString();
+                }
+                else
+                {
+                    incorrectAnswersTextBlock.Text = geSkMode.WrongAnswers.ToString();
+                }
+                geSkMode.GenerateWord();
+                generatedWordTxtBlck.Text = geSkMode.GeneratedWord;
+                answerTextBox.Text = "";
+            }
+            else
+            {
+                if (geSkMode.IsRight(answerTextBox.Text))
+                {
+                    correctAnswersTextBlock.Text = geSkMode.RightAnswers.ToString();
+                }
+                else
+                {
+                    incorrectAnswersTextBlock.Text = geSkMode.WrongAnswers.ToString();
+                }
+                this.Close();
+                MessageBox.Show("Správnych: " + geSkMode.RightAnswers + "\n" + "Nesprávnych: " + geSkMode.WrongAnswers);
+            }
+            
+            
         }
     }
 }

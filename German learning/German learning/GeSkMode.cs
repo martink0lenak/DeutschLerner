@@ -13,7 +13,7 @@ namespace German_learning
     {
         public GeSkMode()
         {
-            usedIndex = new List<int>();
+
             ReadJson();
             rnd = new Random();
             try

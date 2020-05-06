@@ -18,19 +18,20 @@ namespace German_learning
         #endregion
 
         #region number of right answers
-        protected int RightAnswers { get; set; }
+        public int RightAnswers { get;protected set; }
         #endregion
 
         #region number of wrong answers
-        protected int WrongAnswers { get; set; }
+        public int WrongAnswers { get;protected set; }
         #endregion
 
         #region string storing the asked word
         public string GeneratedWord { get;protected set; }
         #endregion
-        
+
+
         #region list of words from the files
-        protected List<Word> listWords = new List<Word>();
+        public List<Word> listWords { get; protected set; } = new List<Word>();
         #endregion
 
         #region stores a boolean value showing whether the game is over
@@ -46,7 +47,7 @@ namespace German_learning
         #endregion
 
         #region list of last used indexes
-        protected List<int> usedIndex;
+        public List<int> usedIndex { get; protected set; } = new List<int>();
         #endregion
 
 
@@ -57,7 +58,7 @@ namespace German_learning
             try
             {
 
-                using (StreamReader r = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\DeutschLerner\" + MainWindow.LectureSelectionFileName))
+                using (StreamReader r = new StreamReader(@"Lekcie\" + MainWindow.LectureSelectionFileName))
                 {
                     Json = r.ReadToEnd();
 
@@ -74,7 +75,7 @@ namespace German_learning
         #region checks whether the answer is correct and adds to right or wrong answer count
         public bool IsRight(string answer)
         {
-            if (answer == GeneratedWord)
+            if (answer == listWords[index].sk)
             {
                 RightAnswers++;
                 return true;
