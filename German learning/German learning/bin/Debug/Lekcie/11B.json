@@ -1,0 +1,328 @@
+{
+  "words": [
+    {
+      "ge": "ähnlich",
+      "sk": "podobný",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "auswählen",
+      "sk": "vybrať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "ausgewählt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Betreuer",
+      "sk": "sprievodca",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Betreuer"
+    },
+    {
+      "ge": "Bett",
+      "sk": "posteľ",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Betten"
+    },
+    {
+      "ge": "Burg",
+      "sk": "hrad",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Burgen"
+    },
+    {
+      "ge": "einfach",
+      "sk": "jednoducho",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "eingerichtet sein",
+      "sk": "zariadený",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "endlos",
+      "sk": "nekonečne",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Erfahrung",
+      "sk": "skúsenosť",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Erfahrungen"
+    },
+    {
+      "ge": "erleben",
+      "sk": "prežiť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "erlebt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Erzgebirge",
+      "sk": "Krušné hory",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "faulenzen",
+      "sk": "leňošiť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "gefaulenzt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Ferienerlebnis",
+      "sk": "prázdninový zážitok",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Ferienerlebnisse"
+    },
+    {
+      "ge": "fern",
+      "sk": "vzdialený",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "gehen um",
+      "sk": "ísť o",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Grenze",
+      "sk": "hranica",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Grenzen"
+    },
+    {
+      "ge": "hinfahren",
+      "sk": "ísť tam",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hingefahren",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Inland",
+      "sk": "vnútrozemie",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Jugendaustausch",
+      "sk": "výmenný pobyt",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "kennenlernen",
+      "sk": "zoznámiť sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "kennengelernt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "klappen",
+      "sk": "vydariť sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "geklappt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Nordsee",
+      "sk": "Severné more",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Praktikum",
+      "sk": "prax",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Praktika"
+    },
+    {
+      "ge": "Schrank",
+      "sk": "skriňa",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Schränke"
+    },
+    {
+      "ge": "Spiegel",
+      "sk": "zrkadlo",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Spiegel"
+    },
+    {
+      "ge": "Tanzcamp",
+      "sk": "tanečný tábor",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Tanzcamps"
+    },
+    {
+      "ge": "Tisch",
+      "sk": "stôl",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Tische"
+    },
+    {
+      "ge": "Treffpunkt",
+      "sk": "miesto stretnutia",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Treffpunkte"
+    },
+    {
+      "ge": "umziehen",
+      "sk": "presťahovať sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "umgezogen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "unsterblich",
+      "sk": "šialene",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Urlaubsort",
+      "sk": "miesto dovolenky",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Urlaubsorte"
+    },
+    {
+      "ge": "veranstalten",
+      "sk": "usporiadať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "veranstaltet",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "sich verlieben",
+      "sk": "zamilovať sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "sich verliebt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "wandern",
+      "sk": "chodiť po horách",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "gewandert",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Waschbecken",
+      "sk": "umývadlo",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Waschbecken"
+    },
+    {
+      "ge": "zelten",
+      "sk": "stanovať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "gezeltet",
+      "praeteritum": "-",
+      "plural": "-"
+    }
+  ]
+}

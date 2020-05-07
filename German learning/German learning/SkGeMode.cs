@@ -7,11 +7,12 @@ using System.IO;
 using System.Windows;
 using Newtonsoft.Json;
 
+
 namespace German_learning
 {
-    class GeSkMode : Mode
+    class SkGeMode : Mode
     {
-        public GeSkMode()
+        public SkGeMode()
         {
 
             ReadJson();
@@ -37,12 +38,12 @@ namespace German_learning
             }
             else
             {
-                
+
                 index = rnd.Next(0, listWords.Count);
 
                 //ensures that it wouldn't generate the same number twice
 
-               
+
                 foreach (int i in usedIndex)
                 {
                     while (i == index)
@@ -51,11 +52,8 @@ namespace German_learning
                     }
                 }
                 usedIndex.Add(index);
-                GeneratedWord = listWords[index].ge;
+                GeneratedWord = listWords[index].sk;
             }
-            
         }
-
-
     }
 }

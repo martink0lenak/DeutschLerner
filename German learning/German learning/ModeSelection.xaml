@@ -6,28 +6,39 @@
         xmlns:local="clr-namespace:German_learning"
         mc:Ignorable="d"
         Title="DeutschLerner | Mód" Height="250" Width="225"
-        Background="NavajoWhite"
+        Background="#373742"
         Closing="ModeSelectionWindow_Closing"
         WindowStartupLocation="CenterScreen">
-    <Grid Margin="5" Background="LightGray">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="75"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="45"/>
-            <RowDefinition/>
-            <RowDefinition Height="30"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
-            <RadioButton x:Name="geSkRadioButton" GroupName="ModeSelection" Margin="5" Content="Preklad GE do SK" FontSize="13"/>
-            <RadioButton x:Name="skGeRadioButton" GroupName="ModeSelection" Margin="5" Content="Preklad SK do GE" FontSize="13"/>
-            <RadioButton x:Name="perfetkumRadioButton" GroupName="ModeSelection" Margin="5" Content="Perfektum slovies" FontSize="13"/>
-            <RadioButton x:Name="pluralRadioButton" GroupName="ModeSelection" Margin="5" Content="Plurál pods. mien" FontSize="13"/>
-            <RadioButton x:Name="genderRadioButton" GroupName="ModeSelection" Margin="5" Content="Rod pods. mien" FontSize="13"/>
-        </StackPanel>
+    <Border CornerRadius="5">
+        <Grid Margin="5" Background="#4B4B52">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+                <RadioButton Foreground="#eaeaea" x:Name="geSkRadioButton" GroupName="ModeSelection" Margin="5" Content="Preklad GE do SK" FontSize="13" />
+                <RadioButton Foreground="#eaeaea" x:Name="skGeRadioButton" GroupName="ModeSelection" Margin="5" Content="Preklad SK do GE" FontSize="13"/>
+                <RadioButton Foreground="#eaeaea" x:Name="perfetkumRadioButton" GroupName="ModeSelection" Margin="5" Content="Perfektum slovies" FontSize="13"/>
+                <RadioButton Foreground="#eaeaea" x:Name="pluralRadioButton" GroupName="ModeSelection" Margin="5" Content="Plurál pods. mien" FontSize="13"/>
+                <RadioButton Foreground="#eaeaea" x:Name="genderRadioButton" GroupName="ModeSelection" Margin="5" Content="Rod pods. mien" FontSize="13"/>
+            </StackPanel>
+
+            <TextBlock Grid.Row="0" Text="Mód" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Foreground="#eaeaea"/>
+            <Button x:Name="modeSelectionOKButton" Click="ModeSelectionOKButton_Click" Grid.Row="2" Margin="5" Content="OK" Background="#9a9a9d" Foreground="Black">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
         
-        <TextBlock Grid.Row="0" Text="Mód" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
-        <Button x:Name="modeSelectionOKButton" Click="ModeSelectionOKButton_Click" Grid.Row="2" Margin="5" Content="OK"/>
-    </Grid>
+    </Border>
+    
+    
 </Window>

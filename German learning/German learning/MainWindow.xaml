@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:German_learning"
         mc:Ignorable="d"
+        
+        
         Title="DeutschLerner | Menu" Height="337" Width="400"
-        Background="NavajoWhite"
-        WindowStartupLocation="CenterScreen">
+        Background="#5E5E67"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="337"
+        MinWidth="400">
 
-<!-- main grid -->
-    <Grid Background="NavajoWhite" Margin="5 5 5 5">
+
+    <!-- main grid -->
+    <Grid Background="#373742" Margin="5 5 5 5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="101"/>
@@ -19,18 +24,19 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
 
-            <RowDefinition Height="75*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="53*"/>
             <RowDefinition Height="160"/>
-            <RowDefinition Height="79*"/>
+            <RowDefinition Height="70*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="halloTextBlock" Grid.Column="1" Grid.Row="0" Text="Hallo!" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10"/>
-        
+        <TextBlock x:Name="halloTextBlock" Grid.Column="1" Grid.Row="1" Foreground="#d2d2d2" Text="Hallo!" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10"/>
+
         <!-- border surrounding the internal grid -->
-        <Border Grid.Row="1" Grid.Column="1"
-                Margin="10 10 10 10"
-                BorderBrush="Gray" BorderThickness="2"
-                Background="LightGray"
+        <Border Grid.Row="2" Grid.Column="1"
+                Margin="10"
+                BorderBrush="#4B4B52" BorderThickness="2"
+                Background="#4B4B52"
                 Grid.ColumnSpan="2">
             <!-- grid with the controls -->
             <Grid Margin="5">
@@ -41,27 +47,67 @@
                     <RowDefinition Height="30"/>
 
                 </Grid.RowDefinitions>
+                
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="90"/>
                     <ColumnDefinition Width="55"/>
                     <ColumnDefinition Width="65"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="17" Margin="9,8,9,8" Grid.Row="0" Grid.ColumnSpan="3" Width="185"/>
-                <TextBox x:Name="lectureNumTextBox" Grid.Row="2" Height="25" Width="65" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10" BorderBrush="Black" BorderThickness="1"/>
+                
+                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu" Height="22" VerticalAlignment="Center" Foreground="#eaeaea" HorizontalAlignment="Left" FontSize="17" Margin="9,8,9,8" Grid.Row="0" Grid.ColumnSpan="3" Width="185"/>
+                
+                <TextBox x:Name="lectureNumTextBox" Grid.Row="2" Height="25" Width="65" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10" BorderBrush="Black" BorderThickness="1">
+                    <TextBox.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                            <Setter Property="BorderBrush" Value="#373742"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                
                 <ComboBox x:Name="subLectureComboBox" Grid.Column="1" Grid.Row="2" Margin="0 10 15 10" Height="25"  VerticalAlignment="Bottom">
                     <ComboBoxItem Content="A"/>
                     <ComboBoxItem Content="B"/>
                     <ComboBoxItem Content="C"/>
                     <ComboBoxItem Content="Celá lekcia"/>
                 </ComboBox>
-                <Button x:Name="modeSelectButton" Content="Výber módu" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="10 5 10 5" Width="115" HorizontalAlignment="Left" Click="modeSelectionBtnClick"/>
-                <Button x:Name="startButton" Grid.Column="2" Grid.Row="3" Margin="0 5 10 5" Content="Štart" Click="menuStartButton_Click"/>
-                <TextBlock Text="Číslo lekcie:" Grid.Column="0" Grid.Row="1" Margin="10 2 10 2"/>
-                <TextBlock Text="Podlekcia:" Grid.Column="1" Grid.Row="1" Margin="0 2 0 2"/>
+                
+                <Button x:Name="modeSelectButton" Background="#9a9a9d" Content="Výber módu" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="10 5 10 5" Width="115" HorizontalAlignment="Left" Click="modeSelectionBtnClick">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                
+                <Button x:Name="startButton" Background="#9a9a9d " Grid.Column="2" Grid.Row="3" Margin="0 5 10 5" Content="Štart" Click="menuStartButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                
+                <TextBlock Text="Číslo lekcie:" Grid.Column="0" Grid.Row="1" Margin="10 2 10 2" Foreground="#eaeaea"/>
+                <TextBlock Text="Podlekcia:" Grid.Column="1" Grid.Row="1" Margin="0 2 0 2" Foreground="#eaeaea"/>
 
             </Grid>
         </Border>
 
-    </Grid>
+        <Border Grid.Row="3" Grid.Column="1" >
 
+        </Border>
+        <Grid.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="5" />
+            </Style>
+        </Grid.Resources>
+
+    </Grid>
 </Window>

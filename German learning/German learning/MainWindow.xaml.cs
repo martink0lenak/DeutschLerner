@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace German_learning
 {
@@ -31,11 +32,11 @@ namespace German_learning
             InitializeComponent();
         }
         #region string storing the lecture and sublecture selection in a format NumberLetter (eg. 11B)
-        static public string LectureSelectionFileName {get; private set; }
+        static public string LectureSelectionFileName { get; private set; }
         #endregion
 
         #region boolean which is true when the ModeSelection window is open, preventing multiple instances
-        static public bool IsModeSelectionOpen {private get; set; } = false;
+        static public bool IsModeSelectionOpen { private get; set; } = false;
         #endregion
 
         #region open mode selection window
@@ -68,7 +69,7 @@ namespace German_learning
                     string iStr = i.ToString();
                     if (i == 21)
                     {
-                        MessageBox.Show("Prosím, zadajte správne číslo (11-20) a uistite sa, že za ním nie sú medzery");
+                        MessageBox.Show("Prosím, zadajte správne číslo (11-20) a uistite sa, či za ním nie sú medzery.");
                         break;
                     }
                     else if (lectureNumTextBox.Text == iStr)
@@ -78,17 +79,26 @@ namespace German_learning
                             MessageBox.Show("Lekcia 11A nemá žiadnu slovnú zásobu");
                             break;
                         }
-                        ////////
-                        LectureSelectionFileName = iStr + subLectureComboBox.Text +".json";
-                        MessageBox.Show(LectureSelectionFileName);
-                        switch (ModeSelection.Mode
+
+                        LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
+                        if (!File.Exists(@"Lekcie\" + LectureSelectionFileName))
                         {
-                                
+                            MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke Lekcie");
+                            break;
                         }
+                        ////////
+
+
+                        GeSkTranslate geSkTranslate = new GeSkTranslate();
+                        geSkTranslate.Show();
                         break;
+
+
+
                         ////////
                     }
                 }
+
             }
             else
             {
@@ -104,7 +114,7 @@ namespace German_learning
                 {
                     MessageBox.Show("Prosím, zvoľte podlekciu alebo celú lekciu");
                 }
-                
+
             }
         }
         #endregion

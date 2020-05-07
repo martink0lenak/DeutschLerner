@@ -43,31 +43,31 @@ namespace German_learning
             else if (skGeRadioButton.IsChecked == true)
             {
                 IsModeSelected = true;
-                Mode = "skge";
+                SelectMode = "skge";
                 this.Close();
             }
             else if (perfetkumRadioButton.IsChecked == true)
             {
                 IsModeSelected = true;
-                Mode = "perfektum";
+                SelectMode = "perfektum";
                 this.Close();
             }
             else if (pluralRadioButton.IsChecked == true)
             {
                 IsModeSelected = true;
-                Mode = "plural";
+                SelectMode = "plural";
                 this.Close();
             }
             else if (genderRadioButton.IsChecked == true)
             {
                 IsModeSelected = true;
-                Mode = "gender";
+                SelectMode = "gender";
                 this.Close();
             }
             else
             {
                 IsModeSelected = false;
-                Mode = null;     
+                SelectMode = null;     
                 this.Close();
             }
         }
