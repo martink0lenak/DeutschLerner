@@ -1,0 +1,22 @@
+E:\code\GitHub\DeutschLerner\German learning\German learning\bin\Release\German learning.exe.config
+E:\code\GitHub\DeutschLerner\German learning\German learning\bin\Release\German learning.exe
+E:\code\GitHub\DeutschLerner\German learning\German learning\bin\Release\German learning.pdb
+E:\code\GitHub\DeutschLerner\German learning\German learning\bin\Release\Newtonsoft.Json.dll
+E:\code\GitHub\DeutschLerner\German learning\German learning\bin\Release\Newtonsoft.Json.xml
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csprojAssemblyReference.cache
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\GeSkTranslate.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\MainWindow.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\ModeSelection.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\App.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning_MarkupCompile.cache
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning_MarkupCompile.lref
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\GeSkTranslate.baml
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\MainWindow.baml
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\ModeSelection.baml
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.g.resources
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German_learning.Properties.Resources.resources
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csproj.GenerateResource.cache
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csproj.CoreCompileInputs.cache
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csproj.CopyComplete
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.exe
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.pdb
