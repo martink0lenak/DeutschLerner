@@ -79,26 +79,26 @@ namespace German_learning
                             MessageBox.Show("Lekcia 11A nemá žiadnu slovnú zásobu");
                             break;
                         }
-                        
+
                         LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
-                        if (!File.Exists(@"Lekcie\"+ MainWindow.LectureSelectionFileName))
+                        if (!File.Exists(@"Lekcie\" + LectureSelectionFileName))
                         {
                             MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke Lekcie");
-                            goto Ex;
+                            break;
                         }
                         ////////
-                        switch (ModeSelection.SelectMode)
-                        {
-                            case "gesk":
-                                GeSkTranslate geSkTranslate = new GeSkTranslate();
-                                geSkTranslate.Show();
-                                goto Ex;
-                                
-                        }
+
+
+                        GeSkTranslate geSkTranslate = new GeSkTranslate();
+                        geSkTranslate.Show();
+                        break;
+
+
 
                         ////////
                     }
                 }
+
             }
             else
             {
@@ -116,7 +116,6 @@ namespace German_learning
                 }
 
             }
-        Ex:;
         }
         #endregion
     }

@@ -23,7 +23,8 @@ namespace German_learning
 
     public partial class GeSkTranslate : Window
     {
-        private GeSkMode geSkMode;
+        private Mode mode = new Mode();
+
 
 
         public string Answer { get; private set; }
@@ -33,39 +34,38 @@ namespace German_learning
         public GeSkTranslate()
         {
             InitializeComponent();
-            geSkMode = new GeSkMode();
-            geSkMode.GenerateWord();
-            generatedWordTxtBlck.Text = geSkMode.GeneratedWord;
+            mode.GenerateWord();
+            generatedWordTxtBlck.Text = mode.GeneratedWord;
         }
 
         private void generateBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (geSkMode.usedIndex.Count < geSkMode.listWords.Count)
+            if (mode.usedIndex.Count < mode.listWords.Count)
             {
-                if (geSkMode.IsRight(answerTextBox.Text))
+                if (mode.IsRight(answerTextBox.Text))
                 {
-                    correctAnswersTextBlock.Text = geSkMode.RightAnswers.ToString();
+                    correctAnswersTextBlock.Text = mode.RightAnswers.ToString();
                 }
                 else
                 {
-                    incorrectAnswersTextBlock.Text = geSkMode.WrongAnswers.ToString();
+                    incorrectAnswersTextBlock.Text = mode.WrongAnswers.ToString();
                 }
-                geSkMode.GenerateWord();
-                generatedWordTxtBlck.Text = geSkMode.GeneratedWord;
+                mode.GenerateWord();
+                generatedWordTxtBlck.Text = mode.GeneratedWord;
                 answerTextBox.Text = "";
             }
             else
             {
-                if (geSkMode.IsRight(answerTextBox.Text))
+                if (mode.IsRight(answerTextBox.Text))
                 {
-                    correctAnswersTextBlock.Text = geSkMode.RightAnswers.ToString();
+                    correctAnswersTextBlock.Text = mode.RightAnswers.ToString();
                 }
                 else
                 {
-                    incorrectAnswersTextBlock.Text = geSkMode.WrongAnswers.ToString();
+                    incorrectAnswersTextBlock.Text = mode.WrongAnswers.ToString();
                 }
                 this.Close();
-                MessageBox.Show("Správnych: " + geSkMode.RightAnswers + "\n" + "Nesprávnych: " + geSkMode.WrongAnswers);
+                MessageBox.Show("Správnych: " + mode.RightAnswers + "\n" + "Nesprávnych: " + mode.WrongAnswers);
             }
             
             

@@ -7,31 +7,50 @@
         mc:Ignorable="d"
         Title="DeutschLerner | Ge → Sk" Height="305" Width="500"
         Name="GeSkWindow"
-        WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+        WindowStartupLocation="CenterScreen"
+        Background="#373742">
+    <Border Padding="15">
+        <Grid Background="#4B4B52">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
 
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="225"/>
-            <ColumnDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="225"/>
+                <ColumnDefinition/>
 
-        </Grid.ColumnDefinitions>
-        <Border Grid.Row="1" Grid.Column="1">
-            <TextBlock x:Name="generatedWordTxtBlck" Grid.Row="1" Grid.Column="1" Height="40" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        </Border>
-        <!-- <TextBlock x:Name="generatedIndexTxtBlck" Grid.Row="0" Grid.Column="1" Width="100" Height="50"/>-->
-        <TextBox x:Name="answerTextBox" Grid.Row="2" Grid.Column="1" Height="25" Background="#c5c5c5" Width="200"/>
-        <Button x:Name="generateBtn" Content="OK" FontSize="16" Grid.Column="1" Grid.Row="3" Width="100" Height="25" Click="generateBtn_Click" IsDefault="True"/>
-        <TextBlock x:Name="correctAnswersTextBlock" Text="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" FontSize="15" Margin="5"/>
-        <TextBlock Text="Správne:" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="0 0 0 5"/>
-        <TextBlock x:Name="incorrectAnswersTextBlock" Text="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="2" FontSize="15" Margin="5"/>
-        <TextBlock Text="Nesprávne:" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="0 0 0 5"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="1" Grid.Column="1">
+                <TextBlock x:Name="generatedWordTxtBlck" Grid.Row="1" Grid.Column="1" Height="40" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#d2d2d2"/>
+            </Border>
+            <!-- <TextBlock x:Name="generatedIndexTxtBlck" Grid.Row="0" Grid.Column="1" Width="100" Height="50"/> -->
+            <TextBox x:Name="answerTextBox" Grid.Row="2" Grid.Column="1" Height="25" Width="200">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button x:Name="generateBtn" Content="OK" FontSize="16" Grid.Column="1" Grid.Row="3" Width="100" Height="25" Click="generateBtn_Click" IsDefault="True" Background="#9a9a9d">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Foreground" Value="Black"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBlock x:Name="correctAnswersTextBlock" Text="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" FontSize="15" Margin="5" Foreground="#d2d2d2"/>
+            <TextBlock Text="Správne:" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="0 0 0 5" Foreground="#d2d2d2"/>
+            <TextBlock x:Name="incorrectAnswersTextBlock" Text="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="2" FontSize="15" Margin="5" Foreground="#d2d2d2"/>
+            <TextBlock Text="Nesprávne:" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="0 0 0 5" Foreground="#d2d2d2"/>
 
-    </Grid>
+        </Grid>
+    </Border>
+    
 </Window>

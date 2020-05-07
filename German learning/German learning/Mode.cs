@@ -14,21 +14,24 @@ namespace German_learning
     {
         //fields
         #region raw JSON string
-        public string Json { get; protected set;}
+        public string Json { get; protected set; }
         #endregion
 
         #region number of right answers
-        public int RightAnswers { get;protected set; }
+        public int RightAnswers { get; protected set; }
         #endregion
 
         #region number of wrong answers
-        public int WrongAnswers { get;protected set; }
+        public int WrongAnswers { get; protected set; }
         #endregion
 
         #region string storing the asked word
-        public string GeneratedWord { get;protected set; }
+        public string GeneratedWord { get; protected set; }
         #endregion
 
+        #region string storing the correct answer
+        public string AnswerWord { get; protected set; }
+        #endregion
 
         #region list of words from the files
         public List<Word> listWords { get; protected set; } = new List<Word>();
@@ -43,7 +46,7 @@ namespace German_learning
         #endregion
 
         #region randomly generated index
-        public int index { get;protected set; }
+        public int index { get; protected set; }
         #endregion
 
         #region list of last used indexes
@@ -52,6 +55,51 @@ namespace German_learning
 
 
         //methods
+        #region class constructor
+        public Mode()
+        {
+
+            ReadJson();
+            rnd = new Random();
+            try
+            {
+                RootWord word = JsonConvert.DeserializeObject<RootWord>(Json);
+                if (ModeSelection.SelectMode == "gesk" || ModeSelection.SelectMode == "skge")
+                {
+                    foreach (var v in word.words)
+                    {
+                        listWords.Add(v);
+                    }
+                }
+                else if (ModeSelection.SelectMode == "perfektum")
+                {
+                    foreach (var v in word.words)
+                    {
+                        if (v.type == "v")
+                        {
+                            listWords.Add(v);
+                        }
+                    }
+                }
+                else if (ModeSelection.SelectMode == "plural" || ModeSelection.SelectMode == "gender")
+                {
+                    foreach (var v in word.words)
+                    {
+                        if (v.type == "n")
+                        {
+                            listWords.Add(v);
+                        }
+                    }
+                }
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
+        #endregion
+
         #region reads the json file and stores it in a string
         protected void ReadJson()
         {
@@ -75,7 +123,7 @@ namespace German_learning
         #region checks whether the answer is correct and adds to right or wrong answer count
         public bool IsRight(string answer)
         {
-            if (answer == listWords[index].sk)
+            if (answer == AnswerWord)
             {
                 RightAnswers++;
                 return true;
@@ -89,12 +137,63 @@ namespace German_learning
         #endregion
 
         #region picks a random word from the lecture
-        public virtual void GenerateWord()
+        public void GenerateWord()
         {
+            if (usedIndex.Count == listWords.Count)
+            {
+                isOver = true;
+            }
+            else
+            {
+                index = rnd.Next(0, listWords.Count);
+
+                //ensures that it wouldn't generate the same number twice
+                foreach (int i in usedIndex)
+                {
+                    while (i == index)
+                    {
+                        index = rnd.Next(0, listWords.Count);
+                    }
+                }
+                usedIndex.Add(index);
+                switch (ModeSelection.SelectMode)
+                {
+                    case "gesk":
+                        GeneratedWord = listWords[index].ge;
+                        AnswerWord = listWords[index].sk;
+                        break;
+                    case "skge":
+                        GeneratedWord = listWords[index].sk;
+                        AnswerWord = listWords[index].ge;
+                        break;
+                    case "perfektum":
+                        GeneratedWord = listWords[index].ge;
+                        AnswerWord = listWords[index].perfektum;
+                        break;
+                    case "plural":
+                        GeneratedWord = listWords[index].ge;
+                        AnswerWord = listWords[index].plural;
+                        break;
+                    case "gender":
+                        GeneratedWord = listWords[index].ge;
+                        if (listWords[index].gender == "m")
+                        {
+                            AnswerWord = "der";
+                        }
+                        else if (listWords[index].gender == "f")
+                        {
+                            AnswerWord = "die";
+                        }
+                        else if (listWords[index].gender == "n")
+                        {
+                            AnswerWord = "das";
+                        }
+                        break;
+                }
+            }
         }
         #endregion
-
-        
-
     }
+
 }
+

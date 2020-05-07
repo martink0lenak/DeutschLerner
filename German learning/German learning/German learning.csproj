@@ -78,6 +78,7 @@
     <Compile Include="ModeSelection.xaml.cs">
       <DependentUpon>ModeSelection.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SkGeMode.cs" />
     <Compile Include="Word.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
