@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:German_learning"
         mc:Ignorable="d"
-        Title="DeutschLerner | Ge → Sk" Height="305" Width="500"
+        Title="DeutschLerner" Height="305" Width="500"
         Name="GeSkWindow"
         WindowStartupLocation="CenterScreen"
         Background="#373742">

@@ -20,3 +20,5 @@ E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German 
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csproj.CopyComplete
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.exe
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.pdb
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\About.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\About.baml

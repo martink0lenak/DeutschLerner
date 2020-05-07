@@ -118,5 +118,16 @@ namespace German_learning
             }
         }
         #endregion
+
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (!About.IsOpen)
+            {
+                About about = new About();
+                about.Show();
+            }
+            
+            
+        }
     }
 }

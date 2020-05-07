@@ -100,14 +100,21 @@
             </Grid>
         </Border>
 
-        <Border Grid.Row="3" Grid.Column="1" >
-
+        <Border Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="10, 0" VerticalAlignment="Top"  HorizontalAlignment="Left" >
+            <Button Content="License" Height="20" Width="70" Background="#9a9a9d" Click="AboutButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Border>
+        
         <Grid.Resources>
             <Style TargetType="Border">
                 <Setter Property="CornerRadius" Value="5" />
             </Style>
         </Grid.Resources>
-
+        
     </Grid>
 </Window>

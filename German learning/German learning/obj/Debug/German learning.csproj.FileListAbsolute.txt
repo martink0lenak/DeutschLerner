@@ -42,3 +42,5 @@ E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German_le
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning.csproj.GenerateResource.cache
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning.csproj.CoreCompileInputs.cache
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\German learning.csproj.CopyComplete
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\About.g.cs
+E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Debug\About.baml
