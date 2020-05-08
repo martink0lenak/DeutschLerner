@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:German_learning"
         mc:Ignorable="d"
-        Title="DeutschLerner | About" Height="300" Width="250" MinHeight="300" MinWidth="250"
+        Title="DeutschLerner | License" Height="300" Width="250" MinHeight="300" MinWidth="250"
         WindowStartupLocation="CenterScreen"
         Background="#373742" Closing="About_Closing">
     <Grid>

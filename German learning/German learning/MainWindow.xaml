@@ -7,114 +7,116 @@
         mc:Ignorable="d"
         
         
-        Title="DeutschLerner | Menu" Height="337" Width="400"
+        Title="DeutschLerner | Menu" Height="437" Width="520"
         Background="#5E5E67"
         WindowStartupLocation="CenterScreen"
-        MinHeight="337"
-        MinWidth="400">
+        MinHeight="437"
+        MinWidth="520">
 
 
     <!-- main grid -->
     <Grid Background="#373742" Margin="5 5 5 5">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="101"/>
-            <ColumnDefinition Width="151"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="141"/>
+            <ColumnDefinition Width="191"/>
+            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
 
-            <RowDefinition Height="13*"/>
-            <RowDefinition Height="53*"/>
-            <RowDefinition Height="160"/>
-            <RowDefinition Height="70*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="halloTextBlock" Grid.Column="1" Grid.Row="1" Foreground="#d2d2d2" Text="Hallo!" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10"/>
+        <TextBlock x:Name="halloTextBlock" Grid.Column="1" Grid.Row="0" Foreground="#d2d2d2" Text="Hallo!" FontSize="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10"/>
 
         <!-- border surrounding the internal grid -->
-        <Border Grid.Row="2" Grid.Column="1"
-                Margin="10"
+        <Border Grid.Row="1" Grid.Column="1"
+                
                 BorderBrush="#4B4B52" BorderThickness="2"
                 Background="#4B4B52"
                 Grid.ColumnSpan="2">
             <!-- grid with the controls -->
-            <Grid Margin="5">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="35"/>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="45"/>
-                    <RowDefinition Height="30"/>
+            <StackPanel Margin="7">
+                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu"  VerticalAlignment="Center" Foreground="#eaeaea" HorizontalAlignment="Left" FontSize="25" Margin="10" Grid.Row="0" Grid.ColumnSpan="3" Width="285"/>
+                <Grid Margin="10 5 10 5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="121"/>
+                        <ColumnDefinition Width="173"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Číslo lekcie:" Grid.Column="0" Foreground="#eaeaea" FontSize="19" VerticalAlignment="Bottom"/>
+                    <TextBlock Text="Podlekcia:" Grid.Column="1" Foreground="#eaeaea" FontSize="19" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="121"/>
+                        <ColumnDefinition Width="173"/>
 
-                </Grid.RowDefinitions>
-                
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="90"/>
-                    <ColumnDefinition Width="55"/>
-                    <ColumnDefinition Width="65"/>
-                </Grid.ColumnDefinitions>
-                
-                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu" Height="22" VerticalAlignment="Center" Foreground="#eaeaea" HorizontalAlignment="Left" FontSize="17" Margin="9,8,9,8" Grid.Row="0" Grid.ColumnSpan="3" Width="185"/>
-                
-                <TextBox x:Name="lectureNumTextBox" Grid.Row="2" Height="25" Width="65" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10" BorderBrush="Black" BorderThickness="1">
-                    <TextBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                            <Setter Property="BorderBrush" Value="#373742"/>
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-                
-                <ComboBox x:Name="subLectureComboBox" Grid.Column="1" Grid.Row="2" Margin="0 10 15 10" Height="25"  VerticalAlignment="Bottom">
-                    <ComboBoxItem Content="A"/>
-                    <ComboBoxItem Content="B"/>
-                    <ComboBoxItem Content="C"/>
-                    <ComboBoxItem Content="Celá lekcia"/>
-                </ComboBox>
-                
-                <Button x:Name="modeSelectButton" Background="#9a9a9d" Content="Výber módu" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="10 5 10 5" Width="115" HorizontalAlignment="Left" Click="modeSelectionBtnClick">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                        </Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Foreground" Value="Black"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                
-                <Button x:Name="startButton" Background="#9a9a9d " Grid.Column="2" Grid.Row="3" Margin="0 5 10 5" Content="Štart" Click="menuStartButton_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                        </Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Foreground" Value="Black"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                
-                <TextBlock Text="Číslo lekcie:" Grid.Column="0" Grid.Row="1" Margin="10 2 10 2" Foreground="#eaeaea"/>
-                <TextBlock Text="Podlekcia:" Grid.Column="1" Grid.Row="1" Margin="0 2 0 2" Foreground="#eaeaea"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="lectureNumTextBox" Height="25" Width="95" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Margin="10 4" BorderBrush="Black" BorderThickness="1" FontSize="16">
+                        <TextBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="3"/>
+                                <Setter Property="BorderBrush" Value="#373742"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
 
-            </Grid>
+                    <ComboBox x:Name="subLectureComboBox" Grid.Column="1" Height="25" Width="45" Margin="10 4" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <ComboBoxItem Content="A"/>
+                        <ComboBoxItem Content="B"/>
+                        <ComboBoxItem Content="C"/>
+                        <ComboBoxItem Content="Celá lekcia"/>
+                    </ComboBox>
+                </Grid>
+
+                <Grid Margin="6 20 10 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="99"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="99"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="modeSelectButton" Background="#9a9a9d" Content="Výber módu" Grid.Column="0" Width="90" VerticalAlignment="Center" Click="modeSelectionBtnClick">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Foreground" Value="Black"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button x:Name="startButton" Background="#9a9a9d" Grid.Column="1" Width="90" Content="Štart" Click="menuStartButton_Click" >
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Foreground" Value="Black"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="License" Height="20" Width="90" Grid.Column="2" Background="#9a9a9d" Click="AboutButton_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </StackPanel>
+
         </Border>
 
-        <Border Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="10, 0" VerticalAlignment="Top"  HorizontalAlignment="Left" >
-            <Button Content="License" Height="20" Width="70" Background="#9a9a9d" Click="AboutButton_Click">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="3"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-        </Border>
-        
+
+
         <Grid.Resources>
             <Style TargetType="Border">
                 <Setter Property="CornerRadius" Value="5" />
             </Style>
         </Grid.Resources>
-        
+
     </Grid>
 </Window>
