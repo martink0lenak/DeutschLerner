@@ -8,19 +8,20 @@
         Title="DeutschLerner" Height="355" Width="550"
         Name="GeSkWindow"
         WindowStartupLocation="CenterScreen"
-        Background="#373742">
+        Background="#373742" Closing="GeSkWindow_Closing">
     <Border Padding="15">
         <Grid Background="#4B4B52">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="73"/>
+                <RowDefinition Height="74"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="1*"/>
 
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="225"/>
+                <ColumnDefinition Width="260"/>
                 <ColumnDefinition/>
 
             </Grid.ColumnDefinitions>
@@ -35,7 +36,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Button x:Name="generateBtn" Content="OK" FontSize="17" Grid.Column="1" Grid.Row="3" Width="100" Height="25" Click="generateBtn_Click" IsDefault="True" Background="#9a9a9d">
+            <Button x:Name="generateBtn" Content="OK" FontSize="17" Grid.Column="1" Grid.Row="4" Width="100" Height="25" Click="generateBtn_Click" IsDefault="True" Background="#9a9a9d">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="3"/>
@@ -43,17 +44,43 @@
                     <Style TargetType="Button">
                         <Setter Property="Foreground" Value="Black"/>
                     </Style>
-                    <Style TargetType="Button">
-                        <Setter Property="VerticalAlignment" Value="Center"/>
-                    </Style>
                 </Button.Resources>
             </Button>
             <TextBlock x:Name="correctAnswersTextBlock" Text="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" FontSize="20" Margin="5" Foreground="#d2d2d2"/>
             <TextBlock Text="Správne:" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="0 0 0 5" Foreground="#d2d2d2"/>
             <TextBlock x:Name="incorrectAnswersTextBlock" Text="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="2" FontSize="20" Margin="5" Foreground="#d2d2d2"/>
             <TextBlock Text="Nesprávne:" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="0 0 0 5" Foreground="#d2d2d2"/>
-
+            <StackPanel  Orientation="Horizontal" Grid.Row="3" Grid.Column="1" Margin="5" HorizontalAlignment="Center">
+                <Button x:Name="CapitalUButton" Width="30" Margin="0 0 10 0" Content="Ü" FontSize="16" Click="CapitalUButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="SmallUButton" Width="30" Margin="0 0 10 0" Content="ü" FontSize="16" Click="SmallUButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="SmallOButton" Width="30" Margin="0 0 10 0" Content="ö" FontSize="16" Click="SmallOButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="SharpSButton" Width="30" Margin="0 0 10 0" Content="ß" FontSize="16" Click="SharpSButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
         </Grid>
     </Border>
-    
+
 </Window>

@@ -62,60 +62,64 @@ namespace German_learning
         #region start button event handler
         private void menuStartButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ModeSelection.IsModeSelected == true && lectureNumTextBox.Text != "" && subLectureComboBox.Text != "")
+            if (!GeSkTranslate.IsOpen)
             {
-                for (int i = 11; i <= 21; i++)
+                if (ModeSelection.IsModeSelected == true && lectureNumTextBox.Text != "" && subLectureComboBox.Text != "")
                 {
-                    string iStr = i.ToString();
-                    if (i == 21)
+                    for (int i = 11; i <= 21; i++)
                     {
-                        MessageBox.Show("Prosím, zadajte správne číslo (11-20) a uistite sa, či za ním nie sú medzery.");
-                        break;
-                    }
-                    else if (lectureNumTextBox.Text == iStr)
-                    {
-                        if (lectureNumTextBox.Text == "11" && subLectureComboBox.Text == "A")
+                        string iStr = i.ToString();
+                        if (i == 21)
                         {
-                            MessageBox.Show("Lekcia 11A nemá žiadnu slovnú zásobu");
+                            MessageBox.Show("Prosím, zadajte správne číslo (11-20) a uistite sa, či za ním nie sú medzery.");
                             break;
                         }
-
-                        LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
-                        if (!File.Exists(@"Lekcie\" + LectureSelectionFileName))
+                        else if (lectureNumTextBox.Text == iStr)
                         {
-                            MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke Lekcie");
+                            if (lectureNumTextBox.Text == "11" && subLectureComboBox.Text == "A")
+                            {
+                                MessageBox.Show("Lekcia 11A nemá žiadnu slovnú zásobu");
+                                break;
+                            }
+
+                            LectureSelectionFileName = iStr + subLectureComboBox.Text + ".json";
+                            if (!File.Exists(@"Lekcie\" + LectureSelectionFileName))
+                            {
+                                MessageBox.Show(@"Súbor nebol nájdený. Uistite sa, že sa súbor nachádza v zložke Lekcie");
+                                break;
+                            }
+                            ////////
+
+
+                            GeSkTranslate geSkTranslate = new GeSkTranslate();
+                            geSkTranslate.Show();
                             break;
+
+
+
+                            ////////
                         }
-                        ////////
-
-
-                        GeSkTranslate geSkTranslate = new GeSkTranslate();
-                        geSkTranslate.Show();
-                        break;
-
-
-
-                        ////////
                     }
-                }
 
-            }
-            else
-            {
-                if (lectureNumTextBox.Text == "")
-                {
-                    MessageBox.Show("Prosím, zvoľte číslo lekcie");
                 }
-                else if (ModeSelection.IsModeSelected == false)
+                else
                 {
-                    MessageBox.Show("Prosím, vyberte si mód");
-                }
-                else if (subLectureComboBox.Text == "")
-                {
-                    MessageBox.Show("Prosím, zvoľte podlekciu alebo celú lekciu");
-                }
+                    if (lectureNumTextBox.Text == "")
+                    {
+                        MessageBox.Show("Prosím, zvoľte číslo lekcie");
+                    }
+                    else if (ModeSelection.IsModeSelected == false)
+                    {
+                        MessageBox.Show("Prosím, vyberte si mód");
+                    }
+                    else if (subLectureComboBox.Text == "")
+                    {
+                        MessageBox.Show("Prosím, zvoľte podlekciu alebo celú lekciu");
+                    }
 
+                }
             }
+            
         }
         #endregion
 

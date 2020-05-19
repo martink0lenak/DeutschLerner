@@ -77,7 +77,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GeSkMode.cs" />
     <Compile Include="GeSkTranslate.xaml.cs">
       <DependentUpon>GeSkTranslate.xaml</DependentUpon>
     </Compile>
@@ -85,7 +84,6 @@
     <Compile Include="ModeSelection.xaml.cs">
       <DependentUpon>ModeSelection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SkGeMode.cs" />
     <Compile Include="Word.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

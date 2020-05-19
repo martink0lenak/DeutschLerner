@@ -39,14 +39,14 @@
                 Grid.ColumnSpan="2">
             <!-- grid with the controls -->
             <StackPanel Margin="7">
-                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu"  VerticalAlignment="Center" Foreground="#eaeaea" HorizontalAlignment="Left" FontSize="25" Margin="10" Grid.Row="0" Grid.ColumnSpan="3" Width="285"/>
+                <TextBlock x:Name="numberTextBlock" Text="Vyber lekciu a podlekciu"  VerticalAlignment="Center" Foreground="#eaeaea" HorizontalAlignment="Left" FontSize="25" Margin="10" Grid.Row="0" Grid.ColumnSpan="3" Width="285" FontFamily="Segoe UI Historic"/>
                 <Grid Margin="10 5 10 5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="121"/>
                         <ColumnDefinition Width="173"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Číslo lekcie:" Grid.Column="0" Foreground="#eaeaea" FontSize="19" VerticalAlignment="Bottom"/>
-                    <TextBlock Text="Podlekcia:" Grid.Column="1" Foreground="#eaeaea" FontSize="19" VerticalAlignment="Bottom"/>
+                    <TextBlock Text="Číslo lekcie:" Grid.Column="0" Foreground="#eaeaea" FontSize="19" VerticalAlignment="Bottom" FontFamily="Segoe UI Historic"/>
+                    <TextBlock Text="Podlekcia:" Grid.Column="1" Foreground="#eaeaea" FontSize="19" VerticalAlignment="Bottom" FontFamily="Segoe UI Historic"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -67,7 +67,6 @@
                         <ComboBoxItem Content="A"/>
                         <ComboBoxItem Content="B"/>
                         <ComboBoxItem Content="C"/>
-                        <ComboBoxItem Content="Celá lekcia"/>
                     </ComboBox>
                 </Grid>
 
@@ -77,7 +76,7 @@
                         <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="99"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="modeSelectButton" Background="#9a9a9d" Content="Výber módu" Grid.Column="0" Width="90" VerticalAlignment="Center" Click="modeSelectionBtnClick">
+                    <Button x:Name="modeSelectButton" Background="#9a9a9d" Content="Výber módu" Grid.Column="0" Width="90" VerticalAlignment="Center" FontSize="14" Click="modeSelectionBtnClick" Height="24" Margin="4,0,5,0" FontFamily="Segoe UI Historic">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="5"/>
@@ -88,7 +87,7 @@
                         </Button.Resources>
                     </Button>
 
-                    <Button x:Name="startButton" Background="#9a9a9d" Grid.Column="1" Width="90" Content="Štart" Click="menuStartButton_Click" >
+                    <Button x:Name="startButton" Background="#9a9a9d" Grid.Column="1" Width="90" FontSize="14" Content="Štart" Click="menuStartButton_Click" FontFamily="Segoe UI Historic" >
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="5"/>
@@ -98,7 +97,7 @@
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button Content="License" Height="20" Width="90" Grid.Column="2" Background="#9a9a9d" Click="AboutButton_Click">
+                    <Button Content="License"  Width="90" Grid.Column="2" FontSize="14" Background="#9a9a9d" Click="AboutButton_Click" FontFamily="Segoe UI Historic">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="5"/>

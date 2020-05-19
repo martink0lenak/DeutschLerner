@@ -24,51 +24,62 @@ namespace German_learning
     public partial class GeSkTranslate : Window
     {
         private Mode mode = new Mode();
-
-
-
         public string Answer { get; private set; }
-        
-
-
+        public static bool IsOpen { get; private set; } = false;
         public GeSkTranslate()
         {
+            IsOpen = true;
             InitializeComponent();
             mode.GenerateWord();
-            generatedWordTxtBlck.Text = mode.GeneratedWord;
+            generatedWordTxtBlck.Text = mode.GeneratedWordGender + " " + mode.GeneratedWord;
         }
 
         private void generateBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (mode.usedIndex.Count < mode.listWords.Count)
+            if (mode.IsRight(answerTextBox.Text))
             {
-                if (mode.IsRight(answerTextBox.Text))
-                {
-                    correctAnswersTextBlock.Text = mode.RightAnswers.ToString();
-                }
-                else
-                {
-                    incorrectAnswersTextBlock.Text = mode.WrongAnswers.ToString();
-                }
-                mode.GenerateWord();
-                generatedWordTxtBlck.Text = mode.GeneratedWord;
-                answerTextBox.Text = "";
+                correctAnswersTextBlock.Text = mode.RightAnswers.ToString();
             }
             else
             {
-                if (mode.IsRight(answerTextBox.Text))
-                {
-                    correctAnswersTextBlock.Text = mode.RightAnswers.ToString();
-                }
-                else
-                {
-                    incorrectAnswersTextBlock.Text = mode.WrongAnswers.ToString();
-                }
+                incorrectAnswersTextBlock.Text = mode.WrongAnswers.ToString();
+            }
+            mode.GenerateWord();
+            if (mode.isOver)
+            {
                 this.Close();
                 MessageBox.Show("Správnych: " + mode.RightAnswers + "\n" + "Nesprávnych: " + mode.WrongAnswers);
             }
-            
-            
+            else
+            {
+                generatedWordTxtBlck.Text = $"{mode.GeneratedWordGender} {mode.GeneratedWord}";
+                answerTextBox.Text = "";
+            }
+        }
+
+        private void CapitalUButton_Click(object sender, RoutedEventArgs e)
+        {
+            answerTextBox.Text += "Ü";
+        }
+
+        private void SmallUButton_Click(object sender, RoutedEventArgs e)
+        {
+            answerTextBox.Text += "ü";
+        }
+
+        private void SmallOButton_Click(object sender, RoutedEventArgs e)
+        {
+            answerTextBox.Text += "ö";
+        }
+
+        private void SharpSButton_Click(object sender, RoutedEventArgs e)
+        {
+            answerTextBox.Text += "ß";
+        }
+
+        private void GeSkWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            IsOpen = false;
         }
     }
 }

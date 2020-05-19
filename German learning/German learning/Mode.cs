@@ -29,6 +29,10 @@ namespace German_learning
         public string GeneratedWord { get; protected set; }
         #endregion
 
+        #region string storing the gender
+        public string GeneratedWordGender { get; protected set; } = "";
+        #endregion
+
         #region string storing the correct answer
         public string AnswerWord { get; protected set; }
         #endregion
@@ -50,7 +54,7 @@ namespace German_learning
         #endregion
 
         #region list of last used indexes
-        public List<int> usedIndex { get; protected set; } = new List<int>();
+        public List<string> guessedWord { get; protected set; } = new List<string>();
         #endregion
 
 
@@ -81,11 +85,21 @@ namespace German_learning
                         }
                     }
                 }
-                else if (ModeSelection.SelectMode == "plural" || ModeSelection.SelectMode == "gender")
+                else if (ModeSelection.SelectMode == "gender")
                 {
                     foreach (var v in word.words)
                     {
                         if (v.type == "n")
+                        {
+                            listWords.Add(v);
+                        }
+                    }
+                }
+                else if (ModeSelection.SelectMode == "plural")
+                {
+                    foreach (var v in word.words)
+                    {
+                        if (v.type == "n" && v.plural != "-")
                         {
                             listWords.Add(v);
                         }
@@ -97,6 +111,8 @@ namespace German_learning
             {
                 MessageBox.Show(e.ToString());
             }
+            int count = listWords.Count;
+            MessageBox.Show(count.ToString());
         }
         #endregion
 
@@ -126,11 +142,18 @@ namespace German_learning
             if (answer == AnswerWord)
             {
                 RightAnswers++;
+                guessedWord.Add(GeneratedWord);
+                GeneratedWordGender = "";
+                return true;
+            }
+            else if (answer == null)
+            {
                 return true;
             }
             else
             {
                 WrongAnswers++;
+                GeneratedWordGender = "";
                 return false;
             }
         }
@@ -139,61 +162,103 @@ namespace German_learning
         #region picks a random word from the lecture
         public void GenerateWord()
         {
-            if (usedIndex.Count == listWords.Count)
+            if (guessedWord.Count == listWords.Count)
             {
                 isOver = true;
+                GeneratedWord = "Koniec";
             }
             else
             {
+                //ensures that it wouldn't generate the same number twice        
                 index = rnd.Next(0, listWords.Count);
 
-                //ensures that it wouldn't generate the same number twice
-                foreach (int i in usedIndex)
+            
+            Back:;
+                if (guessedWord.Count != 0)
                 {
-                    while (i == index)
+                    foreach (string s in guessedWord)
                     {
-                        index = rnd.Next(0, listWords.Count);
+                        if (ModeSelection.SelectMode == "skge")
+                        {
+                            if (listWords[index].sk == s)
+                            {
+                                index = rnd.Next(0, listWords.Count);
+                                goto Back;
+                            }
+                            else
+                            {
+
+                            }
+                        }
+                        else
+                        {
+                            if (listWords[index].ge == s)
+                            {
+                                index = rnd.Next(0, listWords.Count);
+                                goto Back;
+                            }
+                            else
+                            {
+
+                            }
+                        }
                     }
                 }
-                usedIndex.Add(index);
-                switch (ModeSelection.SelectMode)
-                {
-                    case "gesk":
-                        GeneratedWord = listWords[index].ge;
-                        AnswerWord = listWords[index].sk;
-                        break;
-                    case "skge":
-                        GeneratedWord = listWords[index].sk;
-                        AnswerWord = listWords[index].ge;
-                        break;
-                    case "perfektum":
-                        GeneratedWord = listWords[index].ge;
-                        AnswerWord = listWords[index].perfektum;
-                        break;
-                    case "plural":
-                        GeneratedWord = listWords[index].ge;
-                        AnswerWord = listWords[index].plural;
-                        break;
-                    case "gender":
-                        GeneratedWord = listWords[index].ge;
-                        if (listWords[index].gender == "m")
-                        {
-                            AnswerWord = "der";
-                        }
-                        else if (listWords[index].gender == "f")
-                        {
-                            AnswerWord = "die";
-                        }
-                        else if (listWords[index].gender == "n")
-                        {
-                            AnswerWord = "das";
-                        }
-                        break;
-                }
+                
+
+            }
+
+
+            switch (ModeSelection.SelectMode)
+            {
+                case "gesk":
+                    if (listWords[index].gender == "m")
+                    {
+                        GeneratedWordGender = "der";
+                    }
+                    else if (listWords[index].gender == "f")
+                    {
+                        GeneratedWordGender = "die";
+                    }
+                    else if (listWords[index].gender == "n")
+                    {
+                        GeneratedWordGender = "das";
+                    }
+                    GeneratedWord = listWords[index].ge;
+                    AnswerWord = listWords[index].sk;
+                    break;
+                case "skge":
+                    GeneratedWord = listWords[index].sk;
+                    AnswerWord = listWords[index].ge;
+                    break;
+                case "perfektum":
+                    GeneratedWord = listWords[index].ge;
+                    AnswerWord = listWords[index].perfektum;
+                    break;
+                case "plural":
+                    GeneratedWord = listWords[index].ge;
+                    AnswerWord = listWords[index].plural;
+                    break;
+                case "gender":
+                    GeneratedWord = listWords[index].ge;
+                    if (listWords[index].gender == "m")
+                    {
+                        AnswerWord = "der";
+                    }
+                    else if (listWords[index].gender == "f")
+                    {
+                        AnswerWord = "die";
+                    }
+                    else if (listWords[index].gender == "n")
+                    {
+                        AnswerWord = "das";
+                    }
+                    break;
             }
         }
-        #endregion
     }
-
+    #endregion
 }
+
+
 

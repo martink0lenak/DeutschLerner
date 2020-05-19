@@ -1,0 +1,58 @@
+{
+  "words": [
+    {
+      "ge": "als",
+      "sk": "než",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "anbieten",
+      "sk": "ponúknuť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "angeboten",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Ankunft",
+      "sk": "príchod",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Ankunfte"
+    },
+    {
+      "ge": "ansprechen",
+      "sk": "osloviť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "angesprochen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "aussuchen",
+      "sk": "zvoliť si",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "ausgesucht",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Bekannte",
+      "sk": "známy",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Bekannte"
+    }
+  ]
+}
