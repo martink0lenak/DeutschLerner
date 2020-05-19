@@ -53,7 +53,7 @@ namespace German_learning
         public int index { get; protected set; }
         #endregion
 
-        #region list of last used indexes
+        #region list of last used words
         public List<string> guessedWord { get; protected set; } = new List<string>();
         #endregion
 
@@ -172,7 +172,6 @@ namespace German_learning
                 //ensures that it wouldn't generate the same number twice        
                 index = rnd.Next(0, listWords.Count);
 
-            
             Back:;
                 if (guessedWord.Count != 0)
                 {
@@ -187,7 +186,6 @@ namespace German_learning
                             }
                             else
                             {
-
                             }
                         }
                         else
@@ -199,13 +197,10 @@ namespace German_learning
                             }
                             else
                             {
-
                             }
                         }
                     }
                 }
-                
-
             }
 
 
@@ -256,8 +251,9 @@ namespace German_learning
                     break;
             }
         }
+        #endregion
     }
-    #endregion
+
 }
 
 

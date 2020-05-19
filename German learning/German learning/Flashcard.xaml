@@ -1,0 +1,40 @@
+﻿<Window x:Class="German_learning.Flashcard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:German_learning"
+        mc:Ignorable="d"
+        Title="Flashcard" Height="355" Width="550" MinHeight="355" MinWidth="550"
+        Name="GeSkWindow"
+        WindowStartupLocation="CenterScreen"
+        Background="#373742">
+    <Border Padding="15">
+        <Grid Background="#373742">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="164"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="FlipcardButton" Grid.Column="1" Grid.Row="1" Background="#4B4B52" BorderThickness="2" Foreground="#eaeaea" FontSize="27" Click="FlipcardButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="NextWordButton" Grid.Column="1" Grid.Row="2" Width="100" Height="25" Background="#9a9a9d" Content="Ďalšie slovo" FontSize="15" Click="NextWordButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

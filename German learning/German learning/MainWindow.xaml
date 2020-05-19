@@ -13,7 +13,6 @@
         MinHeight="437"
         MinWidth="520">
 
-
     <!-- main grid -->
     <Grid Background="#373742" Margin="5 5 5 5">
         <Grid.ColumnDefinitions>
@@ -25,7 +24,7 @@
         <Grid.RowDefinitions>
 
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="200"/>
+            <RowDefinition Height="235"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
@@ -105,6 +104,17 @@
                         </Button.Resources>
                     </Button>
                 </Grid>
+                <Border Background="#373742" CornerRadius="5" Margin="10 10 10 10">
+                    <Grid Height="25" Margin="10 5 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="2.2*"/>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton x:Name="FlipcardRadioButton" Grid.Column="0" GroupName="Modes" FontSize="17" Foreground="#eaeaea" Content="Flipcard" IsChecked="True" Checked="FlipcardRadioButton_Checked"/>
+                        <RadioButton x:Name="QuestionAnswerRadioButton" Grid.Column="1" GroupName="Modes" FontSize="17" Foreground="#eaeaea" Content="Otázka/odpoveď" Checked="QuestionAnswerRadioButton_Checked"/>
+                    </Grid>
+                </Border>
+                
             </StackPanel>
 
         </Border>

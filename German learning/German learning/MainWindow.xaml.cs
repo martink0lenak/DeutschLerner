@@ -27,16 +27,23 @@ namespace German_learning
 
     public partial class MainWindow : Window
     {
+
+
+        #region string storing the lecture and sublecture selection in a format NumberLetter (eg. 11B)
+        public static string LectureSelectionFileName { get; private set; }
+        #endregion
+
+        #region boolean which is true when the ModeSelection window is open, preventing multiple instances
+        public static bool IsModeSelectionOpen { private get; set; } = false;
+        #endregion
+
+        public static string GameMode { get; private set; }
+
+        #region class constructor
         public MainWindow()
         {
             InitializeComponent();
         }
-        #region string storing the lecture and sublecture selection in a format NumberLetter (eg. 11B)
-        static public string LectureSelectionFileName { get; private set; }
-        #endregion
-
-        #region boolean which is true when the ModeSelection window is open, preventing multiple instances
-        static public bool IsModeSelectionOpen { private get; set; } = false;
         #endregion
 
         #region open mode selection window
@@ -56,10 +63,7 @@ namespace German_learning
         }
         #endregion
 
-
-
-
-        #region start button event handler
+        #region start button - runs the selected mode
         private void menuStartButton_Click(object sender, RoutedEventArgs e)
         {
             if (!GeSkTranslate.IsOpen)
@@ -90,10 +94,19 @@ namespace German_learning
                             }
                             ////////
 
-
-                            GeSkTranslate geSkTranslate = new GeSkTranslate();
-                            geSkTranslate.Show();
-                            break;
+                            if (GameMode == "flipcard")
+                            {
+                                Flashcard flashcard = new Flashcard();
+                                flashcard.Show();
+                                break;
+                            }
+                            else if (GameMode == "QnA")
+                            {
+                                GeSkTranslate geSkTranslate = new GeSkTranslate();
+                                geSkTranslate.Show();
+                                break;
+                            }
+                            
 
 
 
@@ -123,6 +136,7 @@ namespace German_learning
         }
         #endregion
 
+        #region opens the license
         private void AboutButton_Click(object sender, RoutedEventArgs e)
         {
             if (!About.IsOpen)
@@ -130,8 +144,22 @@ namespace German_learning
                 About about = new About();
                 about.Show();
             }
-            
-            
         }
+        #endregion
+
+        #region flipcard mode radio button
+        private void FlipcardRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            GameMode = "flipcard";
+        }
+        #endregion
+
+        #region QnA mode radio button
+        private void QuestionAnswerRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            GameMode = "QnA";
+        }
+        #endregion
+
     }
 }
