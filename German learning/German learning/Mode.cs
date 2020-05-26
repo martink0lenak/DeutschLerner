@@ -112,7 +112,6 @@ namespace German_learning
                 MessageBox.Show(e.ToString());
             }
             int count = listWords.Count;
-            MessageBox.Show(count.ToString());
         }
         #endregion
 
