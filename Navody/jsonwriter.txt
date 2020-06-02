@@ -1,0 +1,19 @@
+prvy prikaz: json_lekcie\<cislo lekcie><podlekcia velkym pismenom>.json
+
+v pripade viacerych prekladov v ucebnici: 1. ak su obidva jednoslovne, napis prvy v poradi
+					  2. ak nemaju rovnaky pocet slov, vyber ten s najmensim poctom slov
+
+typy slov: "n" - podstatne meno
+		  - "m" - muzsky rod
+		  - "f" - zensky rod
+		  - "n" - stredny rod
+	   "v" - sloveso
+		  -na praeteritum vzdy napisat pomlcku
+	   "a" - pridavne mena, prislovky, zamena a ine
+
+v pripade chyby treba bud upravit vysledny subor, alebo napisat "N" ked sa ta to spyta ci chces pokracovat a zopakovat to slovo
+
+
+ked niecomu nebudes rozumiet, treba napisat bud mne, alebo Simonovi
+
+MK
