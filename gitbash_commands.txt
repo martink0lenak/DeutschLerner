@@ -1,4 +1,5 @@
 cd <nazov_priecinka>   --- treba sa dostat do priecinka repo
-1. git commit -m "sprava"   --   pripravi subory na upload
-2. git push     ---    upload
-3. git pull    ---    download
+1. git add <nazov_suboru>    --- zahrnut subor v commite
+2. git commit -m "sprava"   --   pripravi subory na upload
+3. git push     ---    upload
+4. git pull    ---    download
