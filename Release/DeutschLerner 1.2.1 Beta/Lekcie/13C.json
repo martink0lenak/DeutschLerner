@@ -1,0 +1,355 @@
+{
+  "words": [
+    {
+      "ge": "ab und zu",
+      "sk": "občas",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Abenteuer",
+      "sk": "dobrodružstvo",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Abenteuer"
+    },
+    {
+      "ge": "Absender",
+      "sk": "odosielateľ",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Absender"
+    },
+    {
+      "ge": "Anrede",
+      "sk": "oslovenie",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Anreden"
+    },
+    {
+      "ge": "Artikel",
+      "sk": "článok",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Artikel"
+    },
+    {
+      "ge": "baden",
+      "sk": "kúpať sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat gebadet",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "bedeuten",
+      "sk": "znamenať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat bedeutet",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "besichtigen",
+      "sk": "prezrieť si",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat besichtigt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "denken über",
+      "sk": "myslieť si o",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat gedacht",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "diskutieren über",
+      "sk": "diskutovať o",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat diskutiert",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Einleitung",
+      "sk": "úvod",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Einleitungen"
+    },
+    {
+      "ge": "Elektriker",
+      "sk": "elektrikár",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Elektriker"
+    },
+    {
+      "ge": "Empfänger",
+      "sk": "príjemca",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Empfänger"
+    },
+    {
+      "ge": "faul",
+      "sk": "lenivý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Fernsehen",
+      "sk": "televízia",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "feststehen",
+      "sk": "byť istý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Freizeitangebot",
+      "sk": "ponuka na voľný čas",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Freizeitangebote"
+    },
+    {
+      "ge": "gestalten",
+      "sk": "navrhnúť si",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat gestaltet",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Gruß",
+      "sk": "pozdrav",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Grüße"
+    },
+    {
+      "ge": "halten von",
+      "sk": "myslieť si",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat gehalten",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Kauffrau",
+      "sk": "obchodná referentka",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Kauffrauen"
+    },
+    {
+      "ge": "kontaktfreudig",
+      "sk": "spoločenský",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "kreuz und quer",
+      "sk": "krížom-krážom",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Lengeweile",
+      "sk": "nuda",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "lateinamerikanisch",
+      "sk": "latinskoamerický",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "nachdenken über",
+      "sk": "premýšľať o",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "nicht nur, sondern auch",
+      "sk": "nielen, ale aj",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "nirgendwohin",
+      "sk": "nikam",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Reisemagazin",
+      "sk": "časopis o cestovaní",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Reisemagazine"
+    },
+    {
+      "ge": "Rucksack-Tourist",
+      "sk": "turista s plecniakom",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Rucksack-Touristen"
+    },
+    {
+      "ge": "Schlusswort",
+      "sk": "doslov",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Schlussworte"
+    },
+    {
+      "ge": "Single",
+      "sk": "slobodný",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Singles"
+    },
+    {
+      "ge": "Sorte",
+      "sk": "druh",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Sorten"
+    },
+    {
+      "ge": "Typ",
+      "sk": "typ",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Typen"
+    },
+    {
+      "ge": "unternehmen",
+      "sk": "podniknúť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat untergenommen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "verheiratet",
+      "sk": "ženatý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Vorschlag",
+      "sk": "návrh",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Vorschläge"
+    },
+    {
+      "ge": "Wohngemeinschaft",
+      "sk": "spoločné bývanie študentov",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "WGs"
+    },
+    {
+      "ge": "Windsurfen",
+      "sk": "windsurfing",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Windsurfen"
+    }
+  ]
+}

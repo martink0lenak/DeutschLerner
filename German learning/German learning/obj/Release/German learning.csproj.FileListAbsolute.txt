@@ -24,3 +24,28 @@ E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\About.g
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\About.baml
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\Flashcard.g.cs
 E:\code\GitHub\DeutschLerner\German learning\German learning\obj\Release\Flashcard.baml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\bin\Release\German learning.exe.config
+C:\Code\GitHub\DeutschLerner\German learning\German learning\bin\Release\German learning.exe
+C:\Code\GitHub\DeutschLerner\German learning\German learning\bin\Release\German learning.pdb
+C:\Code\GitHub\DeutschLerner\German learning\German learning\bin\Release\Newtonsoft.Json.dll
+C:\Code\GitHub\DeutschLerner\German learning\German learning\bin\Release\Newtonsoft.Json.xml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csprojAssemblyReference.cache
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\About.g.cs
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\Flashcard.g.cs
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\GeSkTranslate.g.cs
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\MainWindow.g.cs
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\ModeSelection.g.cs
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\App.g.cs
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning_MarkupCompile.cache
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning_MarkupCompile.lref
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\About.baml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\Flashcard.baml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\GeSkTranslate.baml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\MainWindow.baml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\ModeSelection.baml
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.g.resources
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German_learning.Properties.Resources.resources
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csproj.GenerateResource.cache
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.csproj.CopyComplete
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.exe
+C:\Code\GitHub\DeutschLerner\German learning\German learning\obj\Release\German learning.pdb

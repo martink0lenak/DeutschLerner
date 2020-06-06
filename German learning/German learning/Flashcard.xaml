@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:German_learning"
         mc:Ignorable="d"
-        Title="Flashcard" Height="355" Width="550" MinHeight="355" MinWidth="550"
+        Title="DeutschLerner | Flipcard" Height="355" Width="550" MinHeight="355" MinWidth="550"
         Name="GeSkWindow"
         WindowStartupLocation="CenterScreen"
         Background="#373742">

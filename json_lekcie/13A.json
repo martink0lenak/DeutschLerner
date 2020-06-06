@@ -1,0 +1,211 @@
+{
+  "words": [
+    {
+      "ge": "Adria",
+      "sk": "Jadran",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Anhaltspunkt",
+      "sk": "záchytný bod",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Anhaltspunkte"
+    },
+    {
+      "ge": "aufgeschlossen",
+      "sk": "otvorený",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Einheimische",
+      "sk": "domáci",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Einheimischen"
+    },
+    {
+      "ge": "Entspannung",
+      "sk": "uvoľnenie",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "fehlen",
+      "sk": "chýbať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "h. gefehlt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Gepäck",
+      "sk": "batožina",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "häuslich",
+      "sk": "domáci",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Höhle",
+      "sk": "jaskyňa",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Höhlen"
+    },
+    {
+      "ge": "mehrmals",
+      "sk": "viackrát",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Nervenkitzel",
+      "sk": "dobrodružná zábava",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "neugierig",
+      "sk": "zvedavý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Notfall",
+      "sk": "prípad núdze",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Notfälle"
+    },
+    {
+      "ge": "offen",
+      "sk": "otvorený",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Ostsee",
+      "sk": "Baltské more",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "pur",
+      "sk": "čistý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Relaxen",
+      "sk": "odpočinok",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Rügen",
+      "sk": "Rujana",
+      "type": "n",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "sicher",
+      "sk": "istý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Sicherheit",
+      "sk": "istota",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Sicherheiten"
+    },
+    {
+      "ge": "überhaupt",
+      "sk": "vôbec",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "unternehmungslustig",
+      "sk": "podnikavý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Zuhause",
+      "sk": "domov",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    }
+  ]
+}

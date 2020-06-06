@@ -1,0 +1,436 @@
+{
+  "words": [
+    {
+      "ge": "bevorzugen",
+      "sk": "uprednostňovať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat bevorzugt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "bisher",
+      "sk": "doposiaľ",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Hohe Tatra",
+      "sk": "Vysoké Tatry",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "ändern",
+      "sk": "zmeniť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat geändert",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Anfangspunkt",
+      "sk": "začiatok",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Anfangspunkte"
+    },
+    {
+      "ge": "Anorak",
+      "sk": "bunda",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Anoraks"
+    },
+    {
+      "ge": "ausnutzen",
+      "sk": "využiť",
+      "type": "hat ausgenutzt",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Badehose",
+      "sk": "pánske plavky",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Badehosen"
+    },
+    {
+      "ge": "bewölkt",
+      "sk": "zamračené",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Bikini",
+      "sk": "bikiny",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Bikinis"
+    },
+    {
+      "ge": "Bundesland",
+      "sk": "Spolková krajina",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Bundesländer"
+    },
+    {
+      "ge": "Deutschbuch",
+      "sk": "učebnica nemčiny",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Deutschbücher"
+    },
+    {
+      "ge": "Dolomiten",
+      "sk": "Dolomity",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Endpunkt",
+      "sk": "koniec",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Endpunkte"
+    },
+    {
+      "ge": "fest",
+      "sk": "pevný",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Gardasee",
+      "sk": "Gardské jazero",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Grad",
+      "sk": "teplotný stupeň",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Grade"
+    },
+    {
+      "ge": "je nach",
+      "sk": "podľa",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "klappen",
+      "sk": "vydariť sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat geklappt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "knapp",
+      "sk": "necelý",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Kontinent",
+      "sk": "kontinent",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Kontinente"
+    },
+    {
+      "ge": "liegen bei",
+      "sk": "činiť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat gelegen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "sich lohnen",
+      "sk": "vyplatiť sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat sich gelohnt",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "neblig",
+      "sk": "hmlisto",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Planung",
+      "sk": "plánovanie",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Planungen"
+    },
+    {
+      "ge": "Regenschirm",
+      "sk": "dáždnik",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Regenschirme"
+    },
+    {
+      "ge": "Rückreise",
+      "sk": "spiatočná cesta",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Rückreisen"
+    },
+    {
+      "ge": "Sehenswürdigkeit",
+      "sk": "pamiatka",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Sehenswürdigkeiten"
+    },
+    {
+      "ge": "scheinen",
+      "sk": "svietiť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat geschienen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Schnee",
+      "sk": "sneh",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "schneien",
+      "sk": "snežiť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat geschneit",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "snowboarden",
+      "sk": "snowboardovať sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat snowgeboardet",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Sonne",
+      "sk": "slnko",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Sonnen"
+    },
+    {
+      "ge": "sonnig",
+      "sk": "slnečný",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "steigen auf",
+      "sk": "stúpať na",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "ist gestiegen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Strand",
+      "sk": "pláž",
+      "type": "n",
+      "gender": "m",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Strände"
+    },
+    {
+      "ge": "Surfbrett",
+      "sk": "surfovacia doska",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Surfbretter"
+    },
+    {
+      "ge": "tauchen",
+      "sk": "potápať sa",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat getaucht",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Taucherbrille",
+      "sk": "potápačské okuliare",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Taucherbrillen"
+    },
+    {
+      "ge": "Temperatur",
+      "sk": "teplota",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Temperaturen"
+    },
+    {
+      "ge": "umsteigen",
+      "sk": "prestupovať",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "ist umgestiegen",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "verbessern",
+      "sk": "zlepšiť",
+      "type": "v",
+      "gender": "-",
+      "perfektum": "hat verbessert",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "wahrscheinlich",
+      "sk": "pravdepodobne",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Wanderschuhe",
+      "sk": "turistické topánky",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    },
+    {
+      "ge": "Wetter",
+      "sk": "počasie",
+      "type": "n",
+      "gender": "n",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Wetter"
+    },
+    {
+      "ge": "Wetterkarte",
+      "sk": "meteorologická mapa",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Wetterkarten"
+    },
+    {
+      "ge": "Wetterlage",
+      "sk": "poveternostná situácia",
+      "type": "n",
+      "gender": "f",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "Wetterlagen"
+    },
+    {
+      "ge": "windig",
+      "sk": "veterno",
+      "type": "a",
+      "gender": "-",
+      "perfektum": "-",
+      "praeteritum": "-",
+      "plural": "-"
+    }
+  ]
+}
